@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { IProduct } from "../../../client/src/types/Model";
+import { IProduct } from './../../../frontend/src/types/Model';
 import { ProductModel } from '../models/ProductModel';
 
 export default class ProductController {
@@ -19,6 +19,7 @@ export default class ProductController {
             const products: IProduct[] = await ProductModel.getProducts();
             return products;
         } catch (error) {
+            console.error('Ошибка при получении продуктов:', error); 
             throw new Error('Failed to retrieve products');
         }
     }

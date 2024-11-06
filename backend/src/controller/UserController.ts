@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import moment from "moment";
 import { v4 as uuidv4 } from 'uuid';
-import { IDelivery, IPayment, IProduct } from "../../../client/src/types/Model";
+import { IDelivery, IPayment, IProduct } from './../../../frontend/src/types/Model';
 import { UserModel } from "../models/UserModel";
 const db = require('../db')
 

@@ -1,6 +1,6 @@
-import { IHistoryOfOrderForServer } from './../../../client/src/types/Model';
+import { IHistoryOfOrderForServer } from './../../../frontend/src/types/Model';
 import { Request, Response } from "express";
-import { IDelivery, IHistoryOfOrder, IOrder, IPayment, IProduct, IRegistration } from "../../../client/src/types/Model";
+import { IDelivery, IHistoryOfOrder, IOrder, IPayment, IProduct, IRegistration } from './../../../frontend/src/types/Model';
 const db = require('../db')
 
 export class UserModel {

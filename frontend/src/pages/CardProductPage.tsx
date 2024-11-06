@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { FiBarChart2 } from "react-icons/fi";
 import { Link, useParams } from "react-router-dom";
-import { CardProductCarousel } from "../components/UX-UI/carousel/CardProducCarousel";
+import { CardProductCarousel } from "../components/UX-UI/Carousel/CardProducCarousel";
 import { useAppDispatch } from "../store/hooks/hooks";
 import { addToCart } from "../store/reducers/Cart";
 import { addToFavorites } from "../store/reducers/Favorites";

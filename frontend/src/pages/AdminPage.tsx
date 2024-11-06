@@ -17,7 +17,7 @@ import { IProduct } from "../types/Model";
 import { CardAdminPanel } from "../components/UX-UI/cards/CardAdminPanel";
 import { useAppDispatch, useAppSelector } from "../store/hooks/hooks";
 import { addToProduct } from "../store/reducers/Products";
-import AccordionHistoryBuyAdmin from "../components/UX-UI/accordion/AccordionHistoryBuyAdmin";
+import AccordionHistoryBuyAdmin from "../components/UX-UI/Accordion/AccordionHistoryBuyAdmin";
 
 export const AdminPage = () => {
   const [HistoryProducts, setHistoryProducts] = useState<IHistoryOfOrder[]>([]);

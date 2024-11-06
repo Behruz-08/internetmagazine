@@ -1,4 +1,5 @@
-import { IDelivery, IHistoryOfOrder, IOrder, IPayment, IProduct, IRegistration } from './../../client/src/types/Model';
+// import { IDelivery, IHistoryOfOrder, IOrder, IPayment, IProduct, IRegistration } from './../../client/src/types/Model';
+import { IDelivery, IHistoryOfOrder, IOrder, IPayment, IProduct, IRegistration } from './../../frontend/src/types/Model';
 const express = require("express");
 const cors = require('cors');
 const bodyParser = require('body-parser');

@@ -1,5 +1,5 @@
 import { Router, Request, Response } from "express";
-import { IProduct } from "../../../client/src/types/Model";
+import { IProduct } from './../../../frontend/src/types/Model';
 import ProductController from "../controller/ProductController";
 import userController from "../controller/UserController";
 

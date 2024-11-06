@@ -1,4 +1,4 @@
-import { IProduct } from "../../../client/src/types/Model";
+import { IProduct } from './../../../frontend/src/types/Model';
 
 const db = require('../db')
 

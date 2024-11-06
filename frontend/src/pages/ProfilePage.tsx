@@ -1,7 +1,7 @@
 import { Breadcrumbs, Input } from "@material-tailwind/react";
 import { Link, useNavigate } from "react-router-dom";
 import { useState, useEffect } from "react";
-import AccordionHistoryBuy from "../components/UX-UI/accordion/AccordionHistoryBuy";
+import AccordionHistoryBuy from "../components/UX-UI/Accordion/AccordionHistoryBuy";
 import { IHistoryOfOrder, IRegistration } from "../types/Model";
 
 export const ProfilePage = () => {

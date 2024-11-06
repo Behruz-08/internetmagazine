@@ -30,22 +30,37 @@ export const Header = () => {
   const user = users?.find((user) => user.role === "user");
   const admin = users?.find((user) => user.role === "admin");
 
-  useEffect(() => {
-    fetch("http://localhost:3009/get-users")
-      .then((response) => response.json())
-      .then((users) => setUsers(users));
-  }, []);
+  // useEffect(() => {
+  //   fetch("http://localhost:3009/get-users")
+  //     .then((response) => response.json())
+  //     .then((users) => setUsers(users));
+  // }, []);
+
+  
 
   const [isRegistred, setIsRegistred] = useState(false);
   const [isLogin, setIsLogin] = useState(false);
   const [isLoginConfirm, setIsLoginConfirm] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
 
+  // useEffect(() => {
+  //   fetch("http://localhost:3009/get-users")
+  //     .then((response) => response.json())
+  //     .then((users) => setUsers(users));
+  // }, [isRegistred, isLogin, isLoginConfirm]);
+
   useEffect(() => {
     fetch("http://localhost:3009/get-users")
-      .then((response) => response.json())
-      .then((users) => setUsers(users));
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then((users) => setUsers(users))
+      .catch((error) => console.error("Fetch error:", error));
   }, [isRegistred, isLogin, isLoginConfirm]);
+  
 
   return (
     <div className="bg-[#212526] h-[10vh]">
